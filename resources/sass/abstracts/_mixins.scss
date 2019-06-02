@@ -1,0 +1,51 @@
+/* ------------------------------------------- */
+/* MEDIA QUERY MANAGER | BASIC
+/* ------------------------------------------- */
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    // 600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and  (max-width: 56.25em) { @content };     // 900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    // 1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    // 1800px + | min-width > If the size is more than 1800px, content in it will apply, if its less, content in it won't apply
+    }
+}
+
+/* ------------------------------------------- */
+/* MEDIA QUERIES | IN DEPTH
+/* ------------------------------------------- */
+
+$bp-huge: 120em;       // 1920px
+$bp-desktop-3: 87.5em; // 1400px
+$bp-desktop: 86.875em; // 1390px
+$bp-desktop-2: 81.25em; // 1300px
+$bp-largest: 75em;   // 1200px
+$bp-largest-2: 71.5625em;  // 1145px
+$bp-largest-3: 70.625em;   // 1130px
+$bp-largest-4: 68.75em;    // 1100px
+$bp-largest-5: 65.625em;   // 1050px
+$bp-large: 62.5em;   // 1000px
+$bp-medium-2: 56.25em; // 900px
+$bp-medium-1: 53.125em; // 850px
+$bp-medium: 50em;    // 800px
+$bp-small-lg: 46.875em; // 750px
+$bp-small-md: 43.75em; // 700px
+$bp-small: 37.5em;   // 600px
+$bp-vsmall: 33.25em;  // 532px
+$bp-vsmall-1: 31.25em; // 500px
+$bp-vsmall-1b: 28.125em; // 450px
+$bp-vsmall-1c: 25.875em; // 414px
+$bp-vsmall-2: 25em;   // 400px
+$bp-vsmall-3: 23.75em; // 375px
+$bp-vsmall-3b: 22.5em; // 360px
+$bp-vsmall-4: 20.9375em; // 335px
+$bp-vsmall-5: 18.75em;  // 300px

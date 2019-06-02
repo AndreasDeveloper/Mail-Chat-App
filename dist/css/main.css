@@ -1,0 +1,43 @@
+/* ------------------------------------------- */
+/* MEDIA QUERY MANAGER | BASIC
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* MEDIA QUERIES | IN DEPTH
+/* ------------------------------------------- */
+/* -------------------------- */
+/*       - BASIC SETUP -
+/* -------------------------- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* DEFINES WHAT REM IS */
+  font-size: 62.5%;
+  /* Takes 62.5% of the default font size (16px). 100 / 16 = 62.5  */
+  /* || 1rem = 10px; 10px/16px = 62.5% || */ }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Raleway', 'Arial', 'serif';
+  background-color: #faf8f8;
+  overflow-x: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
