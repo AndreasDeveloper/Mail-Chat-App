@@ -1,0 +1,59 @@
+// * ------------------- * \\
+//      SIDEBAR LAYOUT     \\
+// * ------------------- * \\
+
+// Main Side Bar Wrapper
+.side-bar {
+    color: $color-white;
+    background-color: $color-primary-light;
+    min-height: 100vh;
+    min-width: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    // Logo
+    &__logo {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+}
+
+// Side Nav Icons
+.side-nav-icons, .bottom-side-nav-icons {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    cursor: pointer;
+    i { margin: .6rem 0; }
+}
+
+// Side Nav Bottom Icons
+.bottom-side-nav-icons { margin-bottom: 1rem; }
+
+// Icon Blocks
+.icon-block {
+    position: relative;
+    margin-bottom: 2rem;
+    // Notification
+    &__notification {
+        font-size: .8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        color: $color-white;
+        background-color: $color-red;
+        position: absolute;
+        top: -.2rem;
+        left: 1.5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}

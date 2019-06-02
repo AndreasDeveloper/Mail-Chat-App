@@ -1,0 +1,14 @@
+// * ------------------- * \\
+//      FORM BUTTON       \\
+// * ------------------- * \\
+
+.btn-reply {
+    color: $color-white;
+    font-family: 'Raleway';
+    display: block;
+    outline: none;
+    border: none;
+    background-color: $color-primary;
+    padding: .6rem;
+    cursor: pointer;
+}

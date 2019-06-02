@@ -41,3 +41,348 @@ body {
     body {
       padding: 0; } }
 
+.chats-bar {
+  background-color: #fff;
+  min-height: 100vh;
+  min-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.1rem solid #9c9c9c; }
+
+.chats-bar-top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+  border-bottom: 0.1rem solid #9c9c9c;
+  padding-bottom: 2rem; }
+  .chats-bar-top-content h1 {
+    font-weight: 500; }
+  .chats-bar-top-content i {
+    cursor: pointer; }
+  .chats-bar-top-content__left-side {
+    display: flex;
+    align-items: center; }
+    .chats-bar-top-content__left-side i {
+      margin-right: 1rem;
+      font-size: 2.3rem; }
+  .chats-bar-top-content__plus-icon {
+    font-size: 2.3rem; }
+
+.chats-bar-mid-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem; }
+  .chats-bar-mid-content__left-side, .chats-bar-mid-content__right-side {
+    display: flex;
+    align-items: center; }
+  .chats-bar-mid-content__left-side__icon-1 {
+    font-size: 2rem;
+    margin-right: .8rem; }
+  .chats-bar-mid-content__left-side__type {
+    font-weight: 400; }
+  .chats-bar-mid-content__left-side__number {
+    margin-left: 1.5rem;
+    font-weight: 400;
+    cursor: pointer; }
+  .chats-bar-mid-content__left-side__icon-2 {
+    font-size: 1.4rem;
+    margin-left: .6rem;
+    cursor: pointer; }
+  .chats-bar-mid-content__right-side {
+    cursor: pointer; }
+    .chats-bar-mid-content__right-side h2 {
+      font-size: 1.4rem;
+      font-weight: 400; }
+    .chats-bar-mid-content__right-side i {
+      font-size: 1.4rem;
+      margin-left: .6rem; }
+
+.message-block-sm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  cursor: pointer;
+  border-bottom: 0.15rem solid #dddddd; }
+
+.mbs-top-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .mbs-top-data__left, .mbs-top-data__right {
+    display: flex;
+    align-items: center; }
+  .mbs-top-data__image {
+    border-radius: 50%;
+    margin-right: 1rem;
+    height: 4rem;
+    width: 4rem; }
+  .mbs-top-data__username {
+    font-weight: 500; }
+  .mbs-top-data__delivery-time {
+    font-weight: 400; }
+
+.message-text {
+  margin-top: 3rem;
+  font-weight: 400;
+  font-size: 1.4rem; }
+
+.mbs-higlight {
+  background-color: #ecebeb;
+  border-left: 0.25rem solid #c69963; }
+
+.load-more-text {
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 2rem;
+  cursor: pointer; }
+
+.inbox-bar {
+  background-color: #ecebeb;
+  min-height: 100vh;
+  min-width: 25rem;
+  display: flex;
+  flex-direction: column; }
+
+.inbox-bar-top-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  border-bottom: 0.1rem solid #9c9c9c;
+  padding-bottom: 2rem; }
+  .inbox-bar-top-content h1 {
+    font-weight: 500; }
+  .inbox-bar-top-content i {
+    font-size: 1.8rem;
+    cursor: pointer; }
+
+.inbox-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem;
+  margin-top: -1rem;
+  border-bottom: 0.1rem solid #9c9c9c;
+  padding-bottom: 3rem; }
+
+.inbox-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 1rem 0; }
+  .inbox-block__head-content {
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+    .inbox-block__head-content i, .inbox-block__head-content h2 {
+      margin: 0 .5rem; }
+    .inbox-block__head-content i {
+      font-size: 1.8rem; }
+    .inbox-block__head-content h2 {
+      font-weight: 500;
+      font-size: 1.8rem; }
+  .inbox-block__body-content {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    margin-left: 3rem; }
+    .inbox-block__body-content__data {
+      display: flex;
+      align-items: center;
+      margin: .5rem 0;
+      cursor: pointer; }
+      .inbox-block__body-content__data i {
+        font-size: 1.6rem;
+        margin-right: .5rem; }
+      .inbox-block__body-content__data h3 {
+        font-weight: 400; }
+    .inbox-block__body-content h4 {
+      font-weight: 300;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      cursor: pointer; }
+
+.inbox-user {
+  margin: 2rem;
+  border-bottom: 0.1rem solid #9c9c9c;
+  padding-bottom: 3rem; }
+
+.user-data {
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+  .user-data__image-block {
+    position: relative; }
+  .user-data__image {
+    border-radius: 50%;
+    margin-right: 1rem; }
+  .user-data__online-status {
+    position: absolute;
+    top: 2.2rem;
+    left: 2.6rem;
+    background-color: #27ae60;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%; }
+  .user-data__username {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-right: .8rem; }
+
+.inbox-live-chat {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 0.1rem solid #9c9c9c;
+  padding-bottom: 3rem; }
+  .inbox-live-chat i {
+    font-size: 4rem;
+    margin-bottom: 1rem; }
+  .inbox-live-chat__heading-1, .inbox-live-chat__heading-2 {
+    font-size: 1.4rem;
+    font-weight: 400; }
+  .inbox-live-chat__heading-3 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: underline;
+    margin-top: 2rem;
+    cursor: pointer; }
+
+.main-chat {
+  background-color: #fff;
+  min-height: 100vh;
+  min-width: 65rem;
+  display: flex;
+  flex-direction: column; }
+
+.main-chat-top-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom: 0.1rem solid #9c9c9c;
+  padding-bottom: 2rem; }
+  .main-chat-top-content__username {
+    font-weight: 400;
+    font-size: 1.8rem; }
+  .main-chat-top-content__message-actions-1, .main-chat-top-content__message-actions-2 {
+    display: flex;
+    align-items: center; }
+  .main-chat-top-content__message-actions-1 .more-btn {
+    transform: rotate(90deg);
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1rem; }
+  .main-chat-top-content__message-actions-1 h3 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    cursor: pointer; }
+  .main-chat-top-content__message-actions-1 .arr-i {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    margin-top: .2rem;
+    cursor: pointer; }
+  .main-chat-top-content__message-actions-2 i {
+    margin: 0 .6rem;
+    font-size: 1.8rem;
+    cursor: pointer; }
+
+.incoming-msg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 4rem 1rem 0 3rem; }
+  .incoming-msg__left img {
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-right: 1.5rem; }
+  .incoming-msg__right {
+    margin-top: -1.5rem; }
+    .incoming-msg__right h3 {
+      font-weight: 300;
+      margin-bottom: .5rem; }
+    .incoming-msg__right .incoming-msg-block {
+      background-color: #dddddd;
+      padding: 1.2rem;
+      max-width: 400px; }
+      .incoming-msg__right .incoming-msg-block h2 {
+        font-weight: 400; }
+
+.outgoing-msg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 4rem 3rem 0 1rem; }
+  .outgoing-msg__left {
+    margin-top: -1.5rem; }
+    .outgoing-msg__left h3 {
+      font-weight: 300;
+      margin-bottom: .5rem; }
+    .outgoing-msg__left .outgoing-msg-block {
+      background-color: #dddddd;
+      padding: 1.2rem;
+      max-width: 400px; }
+      .outgoing-msg__left .outgoing-msg-block h2 {
+        font-weight: 400; }
+  .outgoing-msg__right img {
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-left: 1.5rem; }
+
+.side-bar {
+  color: #fff;
+  background-color: #B28451;
+  min-height: 100vh;
+  min-width: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .side-bar__logo {
+    font-size: 2rem;
+    margin-top: 1rem; }
+
+.side-nav-icons, .bottom-side-nav-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  cursor: pointer; }
+  .side-nav-icons i, .bottom-side-nav-icons i {
+    margin: .6rem 0; }
+
+.bottom-side-nav-icons {
+  margin-bottom: 1rem; }
+
+.icon-block {
+  position: relative;
+  margin-bottom: 2rem; }
+  .icon-block__notification {
+    font-size: .8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #e74c3c;
+    position: absolute;
+    top: -.2rem;
+    left: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.main-dashboard {
+  position: relative;
+  min-height: 100vh;
+  display: flex; }
+

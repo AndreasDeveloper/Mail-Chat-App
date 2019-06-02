@@ -1,0 +1,133 @@
+// * ------------------- * \\
+//        INBOX BAR        \\
+// * ------------------- * \\
+
+// Main Inbox Bar Wrapper
+.inbox-bar {
+    background-color: $color-gray-2;
+    min-height: 100vh;
+    min-width: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+// Top Content of inbox bar (text and icon)
+.inbox-bar-top-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    border-bottom: .1rem solid $color-gray-dark-7;
+    padding-bottom: 2rem;
+    // Text
+    h1 { font-weight: 500; }
+    // Icon
+    i { font-size: 1.8rem; cursor: pointer; }
+}
+
+// Main content of the inbox bar wrapper (chats, groups, trash..)
+.inbox-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem;
+    margin-top: -1rem;
+    border-bottom: .1rem solid $color-gray-dark-7;
+    padding-bottom: 3rem;
+}
+
+// Inbox Block - Chats, Groups .. blocks
+.inbox-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem 0;
+    // Head Content
+    &__head-content {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        // Both Icon and Text
+        i, h2 { margin: 0 .5rem; }
+        // Icon
+        i { font-size: 1.8rem; }
+        // Text
+        h2 { font-weight: 500; font-size: 1.8rem; }
+    }
+    // Body Content
+    &__body-content {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        margin-left: 3rem;
+        // Data in body content (user data, message data..)
+        &__data {
+            display: flex;
+            align-items: center;
+            margin: .5rem 0;
+            cursor: pointer;
+            // Icon
+            i { font-size: 1.6rem; margin-right: .5rem; }
+            // Text
+            h3 { font-weight: 400; }
+        }
+        // Display All Text
+        h4 { font-weight: 300; font-size: 1.2rem; margin-top: 1rem; cursor: pointer; }
+    }
+}
+
+// User Info in Inbox Bar
+.inbox-user {
+    margin: 2rem;
+    border-bottom: .1rem solid $color-gray-dark-7;
+    padding-bottom: 3rem;
+}
+// User Data
+.user-data {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    // Image Block
+    &__image-block { 
+        position: relative; 
+        background-color: #2980b9; 
+        width: 4rem; 
+        border-radius: 50%;
+        margin-right: 1rem;
+        height: 4rem; 
+    }
+    // Online Status Light
+    &__online-status {
+        position: absolute;
+        top: 2.8rem;
+        left: 2.6rem;
+        background-color: $color-green;
+        height: 1.3rem;
+        width: 1.3rem;
+        border-radius: 50%;
+    }
+    // User Name
+    &__username {
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-right: .8rem;
+    }
+}
+
+// Live chat in inbox bar
+.inbox-live-chat {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: .1rem solid $color-gray-dark-7;
+    padding-bottom: 3rem;
+    // Icon
+    i { font-size: 4rem; margin-bottom: 1rem; }
+    // Heading 1 & 2
+    &__heading-1, &__heading-2 {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    // Heading 3
+    &__heading-3 { font-size: 1rem; font-weight: 300; text-decoration: underline; margin-top: 2rem; cursor: pointer; }
+}

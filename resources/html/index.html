@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,294 @@
 
     <title>Mail-Chat App</title>
 </head>
+
 <body>
-    
+
+    <main>
+        <div class="main-dashboard">
+            <!-- SIDEBAR -->
+            <div class="side-bar">
+                <div class="side-bar__logo">
+                    <h1>L</h1>
+                </div>
+                <div class="side-nav-icons">
+                    <div class="icon-block">
+                        <i class="icon ion-ios-chatboxes"></i>
+                        <span class="icon-block__notification">16</span>
+                    </div>
+                    <div class="icon-block">
+                        <i class="icon ion-md-contact"></i>
+                        <span class="icon-block__notification">6</span>
+                    </div>
+                    <i class="icon ion-ios-notifications-outline"></i>
+                </div>
+                <div class="bottom-side-nav-icons">
+                    <i class="icon ion-ios-settings"></i>
+                    <i class="icon ion-ios-log-out"></i>
+                </div>
+            </div>
+            <!-- INBOX BAR -->
+            <div class="inbox-bar">
+                <!-- HEADER CONTENT -->
+                <div class="inbox-bar-top-content">
+                    <h1>Inbox</h1>
+                    <i class="icon ion-ios-search"></i>
+                </div>
+                <!-- MAIN CONTENT -->
+                <div class="inbox-main">
+                    <div class="inbox-block">
+                        <div class="inbox-block__head-content">
+                            <i class="icon ion-ios-filing main-icon"></i>
+                            <h2 class="inbox-type-block__name">Chats</h2>
+                            <i class="icon ion-ios-arrow-down arr"></i>
+                        </div>
+                        <div class="inbox-block__body-content">
+                            <div class="inbox-block__body-content__data">
+                                <i class="icon ion-md-contact"></i>
+                                <h3>John Doe</h3>
+                            </div>
+                            <div class="inbox-block__body-content__data">
+                                <i class="icon ion-md-contact"></i>
+                                <h3>Another Doe</h3>
+                            </div>
+                            <div class="inbox-block__body-content__data">
+                                <i class="icon ion-md-contact"></i>
+                                <h3>Doe Another</h3>
+                            </div>
+                            <div class="inbox-block__body-content__data">
+                                <i class="icon ion-md-contact"></i>
+                                <h3>John</h3>
+                            </div>
+                            <h4>Display all 6 chats</h4>
+                        </div>
+                    </div>
+
+                    <div class="inbox-block">
+                        <div class="inbox-block__head-content">
+                            <i class="icon ion-md-people main-icon"></i>
+                            <h2 class="inbox-type-block__name">Groups</h2>
+                            <i class="icon ion-ios-arrow-forward arr"></i>
+                        </div>
+                    </div>
+
+                    <div class="inbox-block">
+                        <div class="inbox-block__head-content">
+                            <i class="icon ion-ios-star main-icon"></i>
+                            <h2 class="inbox-type-block__name">Starred</h2>
+                            <i class="icon ion-ios-arrow-forward arr"></i>
+                        </div>
+                    </div>
+
+                    <div class="inbox-block">
+                        <div class="inbox-block__head-content">
+                            <i class="icon ion-ios-paper-plane main-icon"></i>
+                            <h2 class="inbox-type-block__name">Sent</h2>
+                            <i class="icon ion-ios-arrow-forward arr"></i>
+                        </div>
+                    </div>
+
+                    <div class="inbox-block">
+                        <div class="inbox-block__head-content">
+                            <i class="icon ion-md-trash main-icon"></i>
+                            <h2 class="inbox-type-block__name">Trash</h2>
+                            <i class="icon ion-ios-arrow-forward arr"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- USER CONTENT -->
+                <div class="inbox-user">
+                    <div class="user-data">
+                        <div class="user-data__image-block">
+                            <span alt="User Image" class="user-data__image"></span>
+                            <span class="user-data__online-status"></span>
+                        </div>
+                        <h3 class="user-data__username">AndreasDEV</h3>
+                        <i class="icon ion-ios-arrow-forward"></i>
+                    </div>
+                </div>
+                <!-- LIVE CHAT CONTENT -->
+                <div class="inbox-live-chat">
+                    <i class="icon ion-ios-chatbubbles"></i>
+                    <h3 class="inbox-live-chat__heading-1">Chat Live With Friends</h3>
+                    <h3 class="inbox-live-chat__heading-2">No live chats started</h3>
+                    <h4 class="inbox-live-chat__heading-3">Start New Chat</h4>
+                </div>
+            </div>
+            <!-- CHATS BAR -->
+            <div class="chats-bar">
+                <!-- HEADER CONTENT -->
+                <div class="chats-bar-top-content">
+                    <div class="chats-bar-top-content__left-side">
+                        <i class="icon ion-ios-menu"></i>
+                        <h1>Chats</h1>
+                    </div>
+                    <i class="icon ion-ios-add chats-bar-top-content__plus-icon"></i>
+                </div>
+                <!-- MID CONTENT -->
+                <div class="chats-bar-mid-content">
+                    <div class="chats-bar-mid-content__left-side">
+                        <i class="icon ion-ios-filing chats-bar-mid-content__left-side__icon-1"></i>
+                        <h2 class="chats-bar-mid-content__left-side__type">All</h2>
+                        <h2 class="chats-bar-mid-content__left-side__number">16</h2>
+                        <i class="icon ion-ios-arrow-down chats-bar-mid-content__left-side__icon-2"></i>
+                    </div>
+                    <div class="chats-bar-mid-content__right-side">
+                        <h2>Newest</h2>
+                        <i class="icon ion-ios-arrow-down"></i>
+                    </div>
+                </div>
+                <!-- MAIN CONTENT -->
+                <div class="chats-bar-main">
+                    <!-- MESSAGE BLOCK 1 -->
+                    <div class="message-block-sm mbs-higlight">
+                        <!-- MESSAGE TOP DATA -->
+                        <div class="mbs-top-data">
+                            <div class="mbs-top-data__left">
+                                <span alt="User Image" class="mbs-top-data__image mbs-top-data__image-1"></span>
+                                <h2 class="mbs-top-data__username">John Doe</h2>
+                            </div>
+                            <div class="mbs-top-data__right">
+                                <h2 class="mbs-top-data__delivery-time">16m</h2>
+                            </div>
+                        </div>
+                        <!-- MESSAGE DATA -->
+                        <h3 class="message-text">This is randomly generated text messa..</h3>
+                    </div>
+
+                    <!-- MESSAGE BLOCK 2 -->
+                    <div class="message-block-sm">
+                        <!-- MESSAGE TOP DATA -->
+                        <div class="mbs-top-data">
+                            <div class="mbs-top-data__left">
+                                <span alt="User Image" class="mbs-top-data__image mbs-top-data__image-2"></span>
+                                <h2 class="mbs-top-data__username">Another Doe</h2>
+                            </div>
+                            <div class="mbs-top-data__right">
+                                <h2 class="mbs-top-data__delivery-time">16m</h2>
+                            </div>
+                        </div>
+                        <!-- MESSAGE DATA -->
+                        <h3 class="message-text">This is randomly generated text messa..</h3>
+                    </div>
+
+                    <!-- MESSAGE BLOCK 3 -->
+                    <div class="message-block-sm">
+                        <!-- MESSAGE TOP DATA -->
+                        <div class="mbs-top-data">
+                            <div class="mbs-top-data__left">
+                                <span alt="User Image" class="mbs-top-data__image mbs-top-data__image-3"></span>
+                                <h2 class="mbs-top-data__username">Doe Another</h2>
+                            </div>
+                            <div class="mbs-top-data__right">
+                                <h2 class="mbs-top-data__delivery-time">16m</h2>
+                            </div>
+                        </div>
+                        <!-- MESSAGE DATA -->
+                        <h3 class="message-text">This is randomly generated text messa..</h3>
+                    </div>
+
+                    <!-- MESSAGE BLOCK 4 -->
+                    <div class="message-block-sm">
+                        <!-- MESSAGE TOP DATA -->
+                        <div class="mbs-top-data">
+                            <div class="mbs-top-data__left">
+                                <span alt="User Image" class="mbs-top-data__image mbs-top-data__image-4"></span>
+                                <h2 class="mbs-top-data__username">John</h2>
+                            </div>
+                            <div class="mbs-top-data__right">
+                                <h2 class="mbs-top-data__delivery-time">16m</h2>
+                            </div>
+                        </div>
+                        <!-- MESSAGE DATA -->
+                        <h3 class="message-text">This is randomly generated text messa..</h3>
+                    </div>
+                    <h3 class="load-more-text">More ...</h3>
+                </div>
+            </div>
+            <!-- MAIN CHAT -->
+            <div class="main-chat">
+                <!-- TOP CONTENT -->
+                <div class="main-chat-top-content">
+                    <h2 class="main-chat-top-content__username">John Doe</h2>
+                    <div class="main-chat-top-content__message-actions-1">
+                        <i class="icon ion-ios-more more-btn"></i>
+                        <h3>Show Details</h3>
+                        <i class="icon ion-ios-arrow-down arr-i"></i>
+                    </div>
+                    <div class="main-chat-top-content__message-actions-2">
+                        <i class="icon ion-ios-star-outline"></i>
+                        <i class="icon ion-md-time"></i>
+                        <i class="icon ion-ios-undo"></i>
+                    </div>
+                </div>
+                <!-- MESSAGES / CHAT -->
+                <div class="chat">
+                    <!-- INCOMING MESSAGE TEMPLATE -->
+                    <div class="incoming-msg">
+                        <div class="incoming-msg__left">
+                            <span alt="User Image" class="incoming-msg-img"></span>
+                        </div>
+                        <div class="incoming-msg__right">
+                            <h3 class="incoming-msg-time">16m</h3>
+                            <div class="incoming-msg-block">
+                                <h2>This is randomly generated text message.</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- OUTGOING MESSAGE TEMPLATE -->
+                    <div class="outgoing-msg">
+                        <div class="outgoing-msg__left">
+                            <h3 class="outgoing-msg-time">6m</h3>
+                            <div class="outgoing-msg-block">
+                                <h2>Another randomly generated text message that is acting as response to the first message.</h2>
+                            </div>
+                        </div>
+                        <div class="outgoing-msg__right">
+                            <span alt="User Image" class="outgoing-msg-img"></span>
+                        </div>
+                    </div>
+                    <!-- INCOMING MESSAGE TEMPLATE -->
+                    <div class="incoming-msg">
+                        <div class="incoming-msg__left">
+                            <span alt="User Image" class="incoming-msg-img"></span>
+                        </div>
+                        <div class="incoming-msg__right">
+                            <h3 class="incoming-msg-time">16m</h3>
+                            <div class="incoming-msg-block">
+                                <h2>End of the message.</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- REPLY TO MESSAGE -->
+                    <div class="reply">
+                        <div class="top-actions">
+                            <div class="top-actions__icons">
+                                <i class="icon ion-ios-undo"></i>
+                                <i class="icon ion-ios-arrow-down"></i>
+                            </div>
+                            <h3>John Doe</h2>
+                        </div>
+                        <!-- REPLY BACK FORM -->
+                        <form class="reply-form">
+                            <textarea required></textarea>
+                            <div class="bottom-actions">
+                                <button type="submit" class="btn-reply">Send</button>
+                                <i class="icon ion-ios-attach"></i>
+                                <i class="icon ion-ios-link"></i>
+                                <i class="icon ion-md-image"></i>
+                                <i class="icon ion-md-lock"></i>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CHAT INFO BAR -->
+            <div class="chat-info"></div>
+        </div>
+    </main>
+
 </body>
+
 </html>
