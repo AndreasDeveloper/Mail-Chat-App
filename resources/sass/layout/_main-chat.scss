@@ -39,6 +39,12 @@
     }
 }
 
+// Chat Wrapper
+.chat {
+    max-height: 55rem;
+    ul { overflow-y: scroll; height: 55rem; }
+}
+
 // Incoming Message Layout
 .incoming-msg {
     display: flex;
@@ -81,7 +87,7 @@
 
 // Reply Form
 .reply {
-    margin-top: 35vh;
+    margin-top: 5vh;
     margin-left: 1rem;
     margin-right: 1rem;
     min-width: 95%;
