@@ -1,0 +1,56 @@
+// * ------------------- * \\
+//        CHAT INFO        \\
+// * ------------------- * \\
+
+// Main Chat Info Wrapper
+.chat-info {
+    background-color: $color-white;
+    min-height: 100vh;
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    // -- Top User Data --
+    &__user-top-data {
+        @include flexcenter;
+        margin-top: 3rem;
+        @include borderBottom;
+        // Span - Imitating Image
+        span { width: 4rem; height: 4rem; background-color: #8e44ad; border-radius: 50%; }
+    }
+    // Username
+    &__username { font-weight: 400; font-size: 1.7rem; margin-top: 1rem; }
+    // Location
+    &__location { display: flex; align-items: center; margin-top: 2rem; 
+        i { margin-right: .5rem; font-size: 1.4rem; } 
+        h4 { font-weight: 400; font-size: 1.4rem; }
+    }
+    // -- Last Message -- & -- Latest Conversation --
+    &__last-message, &__latest-conversation, &__notes {
+        @include flexcenter;
+        align-items: flex-start;
+        padding: 2rem;
+        h2 { font-weight: 400; }
+        h3 { font-weight: 300; margin-top: .5rem; }
+        @include borderBottom;
+    }
+    // -- Notes --
+    &__notes { h3 { background-color: $color-gray-3; padding: .5rem 1rem; margin-top: 1rem; cursor: pointer; } }
+    // -- Details Wrap --
+    &__details { @include flexcenter; @include borderBottom; align-items: flex-start; padding: 2rem;
+        h2 { margin-bottom: 1.5rem; font-weight: 400; }
+    }
+    // -- Detail Block --
+    &__detail { display: flex; align-items: center; margin: .3rem 0;
+        i { font-size: 1.6rem; color: $color-gray-dark-1; margin-right: .8rem; }
+        h3 { font-size: 1.2rem; font-weight: 400; margin-right: .8rem; }
+        h4 { font-size: 1.2rem; font-weight: 300; margin-left: 1rem; text-align: left; }
+    }
+    // -- Media Data --
+    &__media {
+        padding: 2rem;
+        // Top Content
+        &__top-content { display: flex; justify-content: space-between; align-items: center; 
+            h2 { font-weight: 400; } 
+        }
+    }
+}

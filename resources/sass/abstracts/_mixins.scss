@@ -1,3 +1,16 @@
+// Mixin for Flexbox centering
+@mixin flexcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// Border Setup acting as splitter
+@mixin borderBottom {
+    padding-bottom: 3rem;
+    border-bottom: .1rem solid $color-gray-dark-7;
+}
+
 /* ------------------------------------------- */
 /* MEDIA QUERY MANAGER | BASIC
 /* ------------------------------------------- */

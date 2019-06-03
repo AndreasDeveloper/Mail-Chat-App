@@ -1,0 +1,92 @@
+/* -------------------------- */
+/*   - QUICK SEARCH SLIDER -
+/* -------------------------- */
+
+.qs-slider {
+    position: relative;
+    width: 100%;
+    margin: 3rem auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+// Right Left Nav Arrows
+.arrows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+.arrow-left, .arrow-right {
+    font-size: .5rem;
+    background-color: $color-white;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 .5rem rgba($color-black, 0.3);
+    box-shadow: 0 0 .5rem rgba($color-black, 0.3);
+    padding: .8rem;
+    width: 2rem;
+    margin: 0 .5rem;
+    text-align: center;
+    z-index: 998;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+.arrow-left:hover, .arrow-right:hover {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+    -webkit-box-shadow: 0 0 .8rem rgba($color-black, 0.4);
+    box-shadow: 0 0 .8rem rgba($color-black, 0.4);
+}
+
+// Slider Elements Wrap
+.qs-slider-elements {
+    width: 100%;
+    margin-top: 3rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.qs-slider-elements.active {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: grabbing;
+}
+
+// Slider Elements
+.qs-el {
+    color: $color-white;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 2.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    font-size: 5rem;
+    -webkit-transform: scale(0.98);
+    transform: scale(0.97); 
+    opacity: 1;
+    // Text
+    h3 { font-size: 3.5rem; font-weight: 600; text-transform: uppercase; }
+    // On Hover
+    &:hover { opacity: .95; }
+}
+// Grabbing Effect
+ .qs-slider-elements.active .qs-el {
+     -webkit-transform: scale(1);
+     transform: scale(1);
+};
+
+.qs-slider__arrow-left,
+.qs-slider__arrow-right,
+.qs-slider-elements,
+.qs-el {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.qs-el {
+    img { height: 10rem; width: 15rem; }
+}

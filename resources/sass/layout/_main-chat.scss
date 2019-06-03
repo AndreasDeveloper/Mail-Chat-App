@@ -9,6 +9,7 @@
     min-width: 65rem;
     display: flex;
     flex-direction: column;
+    border-right: .1rem solid $color-gray-dark-7;
 }
 
 // Main chat top content
@@ -108,7 +109,7 @@
 // Reply Input Form
 .reply-form {
     // Textarea
-    textarea { outline: none; border: none; font-family: 'Raleway'; padding: 0 1rem; min-height: 6em; min-width: 98%; }
+    textarea { outline: none; border: none; font-family: 'Raleway'; padding: 0 1rem; min-height: 6em; min-width: 98%; resize: vertical; }
 }
 // Reply form bottom actions
 .bottom-actions {
@@ -121,4 +122,6 @@
     button { margin-right: 1rem; }
     // Icons
     i { font-size: 1.8rem; margin: 0 .3rem; cursor: pointer; color: $color-gray-dark-3; }
+    // Delete Button
+    .reply-delete { margin-left: 47rem; }
 }
