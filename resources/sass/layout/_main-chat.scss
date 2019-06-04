@@ -6,9 +6,10 @@
 .main-chat {
     background-color: $color-white;
     min-height: 100vh;
-    min-width: 65rem;
+    min-width: 75rem;
     display: flex;
     flex-direction: column;
+    order: 4;
     border-right: .1rem solid $color-gray-dark-7;
 }
 
@@ -42,7 +43,7 @@
 // Chat Wrapper
 .chat {
     max-height: 55rem;
-    ul { overflow-y: scroll; height: 55rem; }
+    ul { overflow-y: scroll; height: 60rem; }
 }
 
 // Incoming Message Layout
@@ -87,7 +88,7 @@
 
 // Reply Form
 .reply {
-    margin-top: 5vh;
+    margin-top: 10vh;
     margin-left: 1rem;
     margin-right: 1rem;
     min-width: 95%;
@@ -129,5 +130,10 @@
     // Icons
     i { font-size: 1.8rem; margin: 0 .3rem; cursor: pointer; color: $color-gray-dark-3; }
     // Delete Button
-    .reply-delete { margin-left: 47rem; }
+    .reply-delete { margin-left: 56rem; }
+}
+
+// Helper Classes
+.dropdownOff {
+    display: none;
 }

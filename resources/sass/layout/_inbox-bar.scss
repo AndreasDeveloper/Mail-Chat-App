@@ -9,6 +9,7 @@
     min-width: 25rem;
     display: flex;
     flex-direction: column;
+    order: 2;
 }
 
 // Top Content of inbox bar (text and icon)
@@ -41,6 +42,7 @@
     flex-direction: column;
     position: relative;
     margin: 1rem 0;
+    transition: all .2s ease-in-out;
     // Head Content
     &__head-content {
         display: flex;

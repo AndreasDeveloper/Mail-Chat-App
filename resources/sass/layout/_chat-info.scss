@@ -6,9 +6,10 @@
 .chat-info {
     background-color: $color-white;
     min-height: 100vh;
-    min-width: 30rem;
+    min-width: 2rem;
     display: flex;
     flex-direction: column;
+    order: 5;
     // -- Top User Data --
     &__user-top-data {
         @include flexcenter;
@@ -18,7 +19,7 @@
         span { width: 4rem; height: 4rem; background-color: #8e44ad; border-radius: 50%; }
     }
     // Username
-    &__username { font-weight: 400; font-size: 1.7rem; margin-top: 1rem; }
+    &__username { font-weight: 400; font-size: 1.8rem; margin-top: 1rem; }
     // Location
     &__location { display: flex; align-items: center; margin-top: 2rem; 
         i { margin-right: .5rem; font-size: 1.4rem; } 
