@@ -3561,7 +3561,42 @@ eval("__webpack_require__(/*! ../modules/web.timers */ \"./node_modules/core-js/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/main.scss */ \"./resources/sass/main.scss\");\n/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n// * --- Importing SASS Files --- * \\\\\n\n\n//# sourceURL=webpack:///./resources/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/main.scss */ \"./resources/sass/main.scss\");\n/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _views_qs_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/qs-slider */ \"./resources/js/views/qs-slider.js\");\n/* harmony import */ var _views_qs_slider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_views_qs_slider__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _views_dropdowns__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./views/dropdowns */ \"./resources/js/views/dropdowns.js\");\n/* harmony import */ var _views_base__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./views/base */ \"./resources/js/views/base.js\");\n// * --- Importing SASS Files --- * \\\\\n // * --- Importing JS Files --- * \\\\\n\n\n\n\n\n//# sourceURL=webpack:///./resources/js/index.js?");
+
+/***/ }),
+
+/***/ "./resources/js/views/base.js":
+/*!************************************!*\
+  !*** ./resources/js/views/base.js ***!
+  \************************************/
+/*! exports provided: DOMElements */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"DOMElements\", function() { return DOMElements; });\n// DOM Elements\nvar DOMElements = {\n  arrowDownIcon: document.querySelector('.arr'),\n  inboxDropdownContent: document.querySelector('.inbox-block__body-content')\n};\n\n//# sourceURL=webpack:///./resources/js/views/base.js?");
+
+/***/ }),
+
+/***/ "./resources/js/views/dropdowns.js":
+/*!*****************************************!*\
+  !*** ./resources/js/views/dropdowns.js ***!
+  \*****************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _base__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./base */ \"./resources/js/views/base.js\");\n// Importing JS Files\n // * -- Dropdown functionality -- * \\\\\n// - FUNCTION | - Arrow Down Dropdown functionality - \\\\\n\n(function () {\n  // Toggler Helper Function\n  var toggler = function toggler() {\n    if (_base__WEBPACK_IMPORTED_MODULE_0__[\"DOMElements\"].arrowDownIcon.classList.contains('ion-ios-arrow-down')) {\n      _base__WEBPACK_IMPORTED_MODULE_0__[\"DOMElements\"].arrowDownIcon.classList.remove('icon', 'ion-ios-arrow-down');\n      _base__WEBPACK_IMPORTED_MODULE_0__[\"DOMElements\"].arrowDownIcon.classList.add('icon', 'ion-ios-arrow-forward');\n    } else if (_base__WEBPACK_IMPORTED_MODULE_0__[\"DOMElements\"].arrowDownIcon.classList.contains('ion-ios-arrow-forward')) {\n      _base__WEBPACK_IMPORTED_MODULE_0__[\"DOMElements\"].arrowDownIcon.classList.remove('icon', 'ion-ios-arrow-forward');\n      _base__WEBPACK_IMPORTED_MODULE_0__[\"DOMElements\"].arrowDownIcon.classList.add('icon', 'ion-ios-arrow-down');\n    }\n  }; // Click Event Listener on Arrow Down Icon\n\n\n  _base__WEBPACK_IMPORTED_MODULE_0__[\"DOMElements\"].arrowDownIcon.addEventListener('click', function () {\n    _base__WEBPACK_IMPORTED_MODULE_0__[\"DOMElements\"].inboxDropdownContent.classList.toggle('dropdownOff');\n    toggler();\n  });\n})();\n\n//# sourceURL=webpack:///./resources/js/views/dropdowns.js?");
+
+/***/ }),
+
+/***/ "./resources/js/views/qs-slider.js":
+/*!*****************************************!*\
+  !*** ./resources/js/views/qs-slider.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/*global $, console*/\n// DOM Elements\nvar slider = document.querySelector('.qs-slider-elements'),\n    arrows = document.querySelectorAll('.arrows .arrow-left, .arrows .arrow-right'),\n    isDown = false,\n    startX,\n    scrollLeft;\nslider.scrollLeft = 1970;\n\nslider.onmousedown = function (e) {\n  'use strict';\n\n  isDown = true;\n  slider.classList.add('active');\n  startX = e.pageX - slider.offsetLeft;\n  scrollLeft = slider.scrollLeft;\n};\n\nslider.onmouseup = function () {\n  'use strict';\n\n  isDown = false;\n  slider.classList.remove('active');\n};\n\nslider.onmouseleave = function () {\n  'use strict';\n\n  isDown = false;\n  slider.classList.remove('active');\n};\n\nslider.onmousemove = function (e) {\n  'use strict';\n\n  if (!isDown) {\n    return;\n  }\n\n  e.preventDefault();\n  var x = e.pageX - slider.offsetLeft,\n      walk = x - startX;\n  slider.scrollLeft = scrollLeft - walk;\n};\n\nfunction controlsSlider(num) {\n  'use strict';\n\n  var smooth = setInterval(function () {\n    slider.scrollLeft += num;\n  }, 10);\n  setTimeout(function () {\n    clearInterval(smooth);\n  }, 210);\n}\n\narrows[0].onclick = function () {\n  'use strict';\n\n  controlsSlider(-10);\n};\n\narrows[1].onclick = function () {\n  'use strict';\n\n  controlsSlider(10);\n};\n\nwindow.onkeydown = function (e) {\n  'use strict';\n\n  var key = e.keyCode;\n\n  if (key === 39) {\n    controlsSlider(10);\n  }\n\n  if (key === 37) {\n    controlsSlider(-10);\n  }\n};\n\n//# sourceURL=webpack:///./resources/js/views/qs-slider.js?");
 
 /***/ }),
 
