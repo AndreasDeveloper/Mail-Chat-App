@@ -8,27 +8,47 @@
 
 // Main Side Bar Wrapper
 .side-bar {
-    // Logo
-    &__logo {
-        @media only screen and (max-width: $bp-desktop) { font-size: 1.6rem; }
-        @media only screen and (max-width: $bp-small) { margin: 0 1rem; }
+  // Logo
+  &__logo {
+    @media only screen and (max-width: $bp-desktop) {
+      font-size: 1.6rem;
     }
-    @media only screen and (max-width: $bp-desktop) { min-width: 5rem; }
-    @media only screen and (max-width: $bp-small) { min-height: 2vh; min-width: 100%; flex-direction: row; }
+    @media only screen and (max-width: $bp-small) {
+      margin: 0 1rem;
+    }
+  }
+  @media only screen and (max-width: $bp-desktop) {
+    min-width: 5rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    min-height: 2vh;
+    min-width: 100%;
+    flex-direction: row;
+  }
 }
 
 // Side Nav Icons
-.side-nav-icons, .bottom-side-nav-icons {
-    i {
-        @media only screen and (max-width: $bp-small) { margin: 0rem 1rem; }
+.side-nav-icons,
+.bottom-side-nav-icons {
+  i {
+    @media only screen and (max-width: $bp-small) {
+      margin: 0rem 1rem;
     }
-    @media only screen and (max-width: $bp-desktop) { font-size: 2.5rem; }
-    @media only screen and (max-width: $bp-small) { flex-direction: row; align-items: center; }
+  }
+  @media only screen and (max-width: $bp-desktop) {
+    font-size: 2.5rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 // Icon Blocks
 .icon-block {
-    @media only screen and (max-width: $bp-small) { margin-bottom: 0; }
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: 0;
+  }
 }
 
 // * ------------------- * \\
@@ -37,62 +57,91 @@
 
 // Main Inbox Bar Wrapper
 .inbox-bar {
-    @media only screen and (max-width: $bp-desktop) { min-width: 20rem; min-height: 75vh; }
+  @media only screen and (max-width: $bp-desktop) {
+    min-width: 20rem;
+    min-height: 75vh;
+  }
 }
 // Top Content of inbox bar (text and icon)
 .inbox-bar-top-content {
-    h1 { 
-        @media only screen and (max-width: $bp-desktop) { font-size: 1.7rem; }
+  h1 {
+    @media only screen and (max-width: $bp-desktop) {
+      font-size: 1.7rem;
     }
+  }
 }
 // Inbox Main Content
 .inbox-main {
-    @media only screen and (max-width: $bp-desktop) { padding-bottom: 1rem; }
+  @media only screen and (max-width: $bp-desktop) {
+    padding-bottom: 1rem;
+  }
 }
 // Inbox Block - Chats, Groups .. blocks
 .inbox-block {
-    @media only screen and (max-width: $bp-desktop) { margin: .5rem 0; }
-    // Head Content
-    &__head-content {
-        i {
-            @media only screen and (max-width: $bp-desktop) { font-size: 1.6rem; }
-        }
-        h2 {
-            @media only screen and (max-width: $bp-desktop) { font-size: 1.4rem; }
-        }
+  @media only screen and (max-width: $bp-desktop) {
+    margin: 0.5rem 0;
+  }
+  // Head Content
+  &__head-content {
+    i {
+      @media only screen and (max-width: $bp-desktop) {
+        font-size: 1.6rem;
+      }
     }
-    // Body Content
-    &__body-content {
-        // Data in body content (user data, message data..)
-        &__data {
-            i { 
-                @media only screen and (max-width: $bp-desktop) { font-size: 1.4rem; }
-            }
-            h3 { 
-                @media only screen and (max-width: $bp-desktop) { font-size: 1.1rem; }
-            }
-        }
-        // Display All Text
-        h4 {
-            @media only screen and (max-width: $bp-desktop) { margin-top: .5rem; }
-        }
+    h2 {
+      @media only screen and (max-width: $bp-desktop) {
+        font-size: 1.4rem;
+      }
     }
+  }
+  // Body Content
+  &__body-content {
+    // Data in body content (user data, message data..)
+    &__data {
+      i {
+        @media only screen and (max-width: $bp-desktop) {
+          font-size: 1.4rem;
+        }
+      }
+      h3 {
+        @media only screen and (max-width: $bp-desktop) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    // Display All Text
+    h4 {
+      @media only screen and (max-width: $bp-desktop) {
+        margin-top: 0.5rem;
+      }
+    }
+  }
 }
 // User Info in Inbox Bar
 .inbox-user {
-    @media only screen and (max-width: $bp-desktop) { margin: .5rem 2rem; }
+  @media only screen and (max-width: $bp-desktop) {
+    margin: 0.5rem 2rem;
+  }
 }
 // Live chat in inbox bar
 .inbox-live-chat {
-    @media only screen and (max-width: $bp-desktop) { margin: .5rem 2rem; padding-bottom: 1.5rem; }
-    // Heading 1 & 2
-    &__heading-1, &__heading-2 {
-        @media only screen and (max-width: $bp-desktop) { font-size: 1.1rem; }
+  @media only screen and (max-width: $bp-desktop) {
+    margin: 0.5rem 2rem;
+    padding-bottom: 1.5rem;
+  }
+  // Heading 1 & 2
+  &__heading-1,
+  &__heading-2 {
+    @media only screen and (max-width: $bp-desktop) {
+      font-size: 1.1rem;
     }
-    // Heading 3
-    &__heading-3 {
-        @media only screen and (max-width: $bp-desktop) { margin-top: 1rem; }
+  }
+  // Heading 3
+  &__heading-3 {
+    @media only screen and (max-width: $bp-desktop) {
+      margin-top: 1rem;
     }
+  }
 }
 
 // * ------------------- * \\
@@ -101,56 +150,84 @@
 
 // Main Chats Bar Wrapper
 .chats-bar {
-    @media only screen and (max-width: $bp-desktop) { min-width: 25rem; min-height: 75vh; }
+  @media only screen and (max-width: $bp-desktop) {
+    min-width: 25rem;
+    min-height: 75vh;
+  }
 }
 // Top Content of chats bar (text and icons)
 .chats-bar-top-content {
-    @media only screen and (max-width: $bp-desktop) { margin: 2rem 2rem 0rem 2rem; }
-    h1 {
-        @media only screen and (max-width: $bp-desktop) { font-size: 1.7rem; }
+  @media only screen and (max-width: $bp-desktop) {
+    margin: 2rem 2rem 0rem 2rem;
+  }
+  h1 {
+    @media only screen and (max-width: $bp-desktop) {
+      font-size: 1.7rem;
     }
-    i {
-        @media only screen and (max-width: $bp-desktop) { font-size: 1.6rem; }
+  }
+  i {
+    @media only screen and (max-width: $bp-desktop) {
+      font-size: 1.6rem;
     }
+  }
 }
 // Mid Content of chats bar (type of messages, filtering ..)
 .chats-bar-mid-content {
-    &__left-side {
-        &__icon-1 {
-            @media only screen and (max-width: $bp-desktop) { font-size: 1.6rem; }
-        }
-        &__type { 
-            @media only screen and (max-width: $bp-desktop) { font-size: 1.4rem; }
-        }
-        &__number {
-            @media only screen and (max-width: $bp-desktop) { font-size: 1.4rem; }
-        }
-        &__icon-2 {
-            @media only screen and (max-width: $bp-desktop) { font-size: 1.2rem; }
-        }
+  &__left-side {
+    &__icon-1 {
+      @media only screen and (max-width: $bp-desktop) {
+        font-size: 1.6rem;
+      }
     }
-    &__right-side {
-        h2 {
-            @media only screen and (max-width: $bp-desktop) { font-size: 1.2rem; }
-        }
-        i {
-            @media only screen and (max-width: $bp-desktop) { font-size: 1rem; }
-        }
+    &__type {
+      @media only screen and (max-width: $bp-desktop) {
+        font-size: 1.4rem;
+      }
     }
+    &__number {
+      @media only screen and (max-width: $bp-desktop) {
+        font-size: 1.4rem;
+      }
+    }
+    &__icon-2 {
+      @media only screen and (max-width: $bp-desktop) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__right-side {
+    h2 {
+      @media only screen and (max-width: $bp-desktop) {
+        font-size: 1.2rem;
+      }
+    }
+    i {
+      @media only screen and (max-width: $bp-desktop) {
+        font-size: 1rem;
+      }
+    }
+  }
 }
 // Chats Bar Main Content
 .chats-bar-main {
-    ul { 
-        @media only screen and (max-width: $bp-desktop) { max-height: 42rem; }
+  ul {
+    @media only screen and (max-width: $bp-desktop) {
+      max-height: 42rem;
     }
+  }
 }
 // Message Block
 .message-block-sm {
-    @media only screen and (max-width: $bp-desktop) { padding: 1.5rem 1rem; }
+  @media only screen and (max-width: $bp-desktop) {
+    padding: 1.5rem 1rem;
+  }
 }
 // Message Text
 .message-text {
-    @media only screen and (max-width: $bp-desktop) { font-size: 1.2rem; margin-top: 1.5rem; }
+  @media only screen and (max-width: $bp-desktop) {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
 }
 
 // * ------------------- * \\
@@ -159,47 +236,68 @@
 
 // Main Chat Wrapper
 .main-chat {
-    @media only screen and (max-width: $bp-desktop) { min-width: 60rem; min-height: 75vh; }
+  @media only screen and (max-width: $bp-desktop) {
+    min-width: 60rem;
+    min-height: 75vh;
+  }
 }
 // Chat Wrapper
 .chat {
-    @media only screen and (max-width: $bp-desktop) { max-height: 32rem; }
+  @media only screen and (max-width: $bp-desktop) {
+    max-height: 32rem;
+  }
 }
 .chat ul {
-    @media only screen and (max-width: $bp-desktop) { height: 45rem; }
+  @media only screen and (max-width: $bp-desktop) {
+    height: 45rem;
+  }
 }
 // Incoming Message Layout
 .incoming-msg {
-    // Right Side
-    &__right {
-        // Message Content
-        .incoming-msg-block { 
-            @media only screen and (max-width: $bp-desktop) { padding: 1rem; max-width: 250px; }
-        }
+  // Right Side
+  &__right {
+    // Message Content
+    .incoming-msg-block {
+      @media only screen and (max-width: $bp-desktop) {
+        padding: 1rem;
+        max-width: 250px;
+      }
     }
+  }
 }
 // Outgoing Message Layout
 .outgoing-msg {
-    // Left Side
-    &__left {
-        // Message Content
-        .outgoing-msg-block {
-            @media only screen and (max-width: $bp-desktop) { padding: 1rem; max-width: 250px; }
-        }
+  // Left Side
+  &__left {
+    // Message Content
+    .outgoing-msg-block {
+      @media only screen and (max-width: $bp-desktop) {
+        padding: 1rem;
+        max-width: 250px;
+      }
     }
+  }
 }
 // Reply Form
 .reply {
-    @media only screen and (max-width: $bp-desktop) { margin-top: 8vh; }
+  @media only screen and (max-width: $bp-desktop) {
+    margin-top: 8vh;
+  }
 }
 // Reply form bottom actions
 .bottom-actions {
-    // Delete Button
-    .reply-delete { 
-        @media only screen and (max-width: $bp-desktop) { margin-left: 31rem; }
-        @media only screen and (max-width: $bp-small) { margin-left: 25rem; }
-        @media only screen and (max-width: $bp-vsmall-4) { margin-left: 20rem; }
+  // Delete Button
+  .reply-delete {
+    @media only screen and (max-width: $bp-desktop) {
+      margin-left: 31rem;
     }
+    @media only screen and (max-width: $bp-small) {
+      margin-left: 25rem;
+    }
+    @media only screen and (max-width: $bp-vsmall-4) {
+      margin-left: 20rem;
+    }
+  }
 }
 
 // * ------------------- * \\
@@ -208,6 +306,7 @@
 
 // Main Chat Info Wrapper
 .chat-info {
+<<<<<<< HEAD
 <<<<<<< HEAD
     @media only screen and (max-width: $bp-desktop) { min-width: 15rem; min-height: 60vh; }
 =======
@@ -227,22 +326,61 @@
         h4 {
             @media only screen and (max-width: $bp-desktop) { font-size: 1.2rem; }
         }
+=======
+  @media only screen and (max-width: $bp-desktop) {
+    min-width: 20rem;
+    min-height: 60vh;
+  }
+  // Top User Data
+  &__user-top-data {
+    @media only screen and (max-width: $bp-desktop) {
+      padding-bottom: 1rem;
+      margin-top: 1rem;
+>>>>>>> dev-2
     }
-    // -- Last Message -- & -- Latest Conversation --
-    &__last-message, &__latest-conversation, &__notes {
-        @media only screen and (max-width: $bp-desktop) { padding: 1.5rem; }
+  }
+  // Username
+  &__username {
+    @media only screen and (max-width: $bp-desktop) {
+      font-size: 1.5rem;
     }
-    // -- Details Wrap --
-    &__details { 
-        @media only screen and (max-width: $bp-desktop) { padding: 1rem 2rem; }
-        h2 { 
-            @media only screen and (max-width: $bp-desktop) { margin-bottom: 1rem; } 
-        }
+  }
+  // Location
+  &__location {
+    @media only screen and (max-width: $bp-desktop) {
+      margin-top: 0.5rem;
     }
-    // -- Media Data --
-    &__media {
-        @media only screen and (max-width: $bp-desktop) { padding: 1.5rem 2rem; }
+    h4 {
+      @media only screen and (max-width: $bp-desktop) {
+        font-size: 1.2rem;
+      }
     }
+  }
+  // -- Last Message -- & -- Latest Conversation --
+  &__last-message,
+  &__latest-conversation,
+  &__notes {
+    @media only screen and (max-width: $bp-desktop) {
+      padding: 1.5rem;
+    }
+  }
+  // -- Details Wrap --
+  &__details {
+    @media only screen and (max-width: $bp-desktop) {
+      padding: 1rem 2rem;
+    }
+    h2 {
+      @media only screen and (max-width: $bp-desktop) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  // -- Media Data --
+  &__media {
+    @media only screen and (max-width: $bp-desktop) {
+      padding: 1.5rem 2rem;
+    }
+  }
 }
 
 // * ------------------- * \\
@@ -250,20 +388,31 @@
 // * ------------------- * \\
 
 .qs-slider {
-    @media only screen and (max-width: $bp-desktop) { margin: .5rem auto; }
+  @media only screen and (max-width: $bp-desktop) {
+    margin: 0.5rem auto;
+  }
 }
 // Slider Elements Wrap
 .qs-slider-elements {
-    @media only screen and (max-width: $bp-desktop) { margin-top: 2rem; }
+  @media only screen and (max-width: $bp-desktop) {
+    margin-top: 2rem;
+  }
 }
 // Slider Elements
 .qs-el {
-    @media only screen and (max-width: $bp-desktop) { width: 10rem; height: 5rem; margin: 0 .1rem; }
+  @media only screen and (max-width: $bp-desktop) {
+    width: 10rem;
+    height: 5rem;
+    margin: 0 0.1rem;
+  }
 }
 
 // Element images
 .qs-el {
-    img { 
-        @media only screen and (max-width: $bp-desktop) { height: 5rem; width: 10rem; }
+  img {
+    @media only screen and (max-width: $bp-desktop) {
+      height: 5rem;
+      width: 10rem;
     }
+  }
 }
