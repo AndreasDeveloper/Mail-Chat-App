@@ -1,17 +1,28 @@
 const express = require("express");
-const mongoose = require("mongoose");
-
-const User = require("../models/user");
+const passport = require("passport");
 
 const router = express.Router();
 
-//Remove for production
-router.get("/", (req, res, next) => {
-  res.status(200).json({ message: "Works!" });
+const UserController = require("../controllers/user");
+
+router.post("/register", UserController.user_register);
+
+router.post(
+  "/login",
+  passport.authenticate("local", {
+    successRedirect: "/",
+    failureRedirect: "/login"
+  })
+);
+
+router.get("/logout", UserController.user_logout);
+
+passport.serializeUser((_id, done) => {
+  done(null, _id);
 });
 
-router.post("/signup", (req, res, next) => {
-  res.status(201).json({ body: req.body });
+passport.deserializeUser((_id, done) => {
+  done(null, _id);
 });
 
 module.exports = router;
