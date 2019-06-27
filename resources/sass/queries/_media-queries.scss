@@ -208,7 +208,11 @@
 
 // Main Chat Info Wrapper
 .chat-info {
+<<<<<<< HEAD
     @media only screen and (max-width: $bp-desktop) { min-width: 15rem; min-height: 60vh; }
+=======
+    @media only screen and (max-width: $bp-desktop) { min-width: 20rem; min-height: 60vh; }
+>>>>>>> dev-1
     // Top User Data
     &__user-top-data {
         @media only screen and (max-width: $bp-desktop) { padding-bottom: 1rem; margin-top: 1rem; }
