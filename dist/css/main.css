@@ -254,6 +254,7 @@ body {
     font-size: 2.3rem; }
 
 .chats-bar-mid-content {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin: 2rem; }
@@ -274,13 +275,18 @@ body {
     margin-left: .6rem;
     cursor: pointer; }
   .chats-bar-mid-content__right-side {
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all .2s ease-in-out; }
     .chats-bar-mid-content__right-side h2 {
       font-size: 1.4rem;
       font-weight: 400; }
     .chats-bar-mid-content__right-side i {
       font-size: 1.4rem;
       margin-left: .6rem; }
+    .chats-bar-mid-content__right-side:hover > .chats-dropdown {
+      transition: all .2s ease-in-out;
+      opacity: 1;
+      display: flex; }
 
 .chats-bar-main ul {
   overflow-y: scroll;
@@ -346,6 +352,21 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #c69963; }
+
+.chats-dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  z-index: 99; }
+  .chats-dropdown h2 {
+    margin: .5rem 0; }
 
 .inbox-bar {
   background-color: #ecebeb;

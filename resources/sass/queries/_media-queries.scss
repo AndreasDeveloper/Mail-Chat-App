@@ -306,27 +306,6 @@
 
 // Main Chat Info Wrapper
 .chat-info {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    @media only screen and (max-width: $bp-desktop) { min-width: 15rem; min-height: 60vh; }
-=======
-    @media only screen and (max-width: $bp-desktop) { min-width: 20rem; min-height: 60vh; }
->>>>>>> dev-1
-    // Top User Data
-    &__user-top-data {
-        @media only screen and (max-width: $bp-desktop) { padding-bottom: 1rem; margin-top: 1rem; }
-    }
-    // Username
-    &__username { 
-        @media only screen and (max-width: $bp-desktop) { font-size: 1.5rem; } 
-    }
-    // Location
-    &__location { 
-        @media only screen and (max-width: $bp-desktop) { margin-top: .5rem; }
-        h4 {
-            @media only screen and (max-width: $bp-desktop) { font-size: 1.2rem; }
-        }
-=======
   @media only screen and (max-width: $bp-desktop) {
     min-width: 20rem;
     min-height: 60vh;
@@ -336,7 +315,6 @@
     @media only screen and (max-width: $bp-desktop) {
       padding-bottom: 1rem;
       margin-top: 1rem;
->>>>>>> dev-2
     }
   }
   // Username
