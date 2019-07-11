@@ -893,6 +893,18 @@ body {
     font-size: 1.2rem; } }
 
 @media only screen and (max-width: 86.875em) {
+  .chat-info__username {
+    font-size: 1.5rem; } }
+
+@media only screen and (max-width: 86.875em) {
+  .chat-info__location {
+    margin-top: 0.5rem; } }
+
+@media only screen and (max-width: 86.875em) {
+  .chat-info__location h4 {
+    font-size: 1.2rem; } }
+
+@media only screen and (max-width: 86.875em) {
   .chat-info__last-message, .chat-info__latest-conversation, .chat-info__notes {
     padding: 1.5rem; } }
 
